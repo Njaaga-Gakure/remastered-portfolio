@@ -30,8 +30,8 @@ html {
   --gray-900: #18181b;
 
   /* blacks */
-  --black-1: #00272b;
-  --black-2: #090c08;
+  --black-1: #000a0b;
+  --black-2: #001011;
 
   /* other colors */
   --dark-green: #003b36;
@@ -149,5 +149,5 @@ ul {
 
 /* dark mode styles */
 .dark-mode-bg {
-  background: var(--gray-900);
+  background: var(--black-1);
 }

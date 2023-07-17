@@ -27,7 +27,7 @@ const Wrapper = styled.section`
     background: var(--gray-50);
   }
   .about-dark-bg {
-    background: var(--black-1);
+    background: var(--black-2);
   }
   .center-container {
     padding: 2rem 0;

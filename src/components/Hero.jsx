@@ -76,9 +76,6 @@ const Wrapper = styled.section`
     a {
       .svg-dark-mode {
         color: var(--gray-50);
-        &:hover {
-          color: var(--gray-300);
-        }
       }
     }
   }
