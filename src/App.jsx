@@ -10,10 +10,10 @@ function App() {
     >
       <Navbar />
       <Hero />
-      {/* <About />
-      <Skills />
-      <Portfolio />
-      <Contacts /> */}
+      <About />
+      {/* <Skills />
+      <Portfolio /> */}
+      {/* <Contacts /> */}
     </div>
   );
 }

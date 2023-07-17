@@ -5,35 +5,30 @@ import { useAppContext } from "../contexts/app_context";
 const Hero = () => {
   const { isDarkMode } = useAppContext();
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <div className="center-container">
         <h1 className={isDarkMode ? "hero-title text-dark" : "hero-title"}>
-          Hi, I'm <br /> <span>Brian Gakure</span>
+          Hi, I'm <br />
+          <span>Brian Gakure</span>
         </h1>
         <span className="hero-role">front-end developer</span>
-        <p className={isDarkMode ? "hero-desc text-dark" : "hero-desc"}>
-          Passionate self-taught JavaScript developer adept at front-end using
-          Reactjs. Eager to contribute to impactful projects and enhance
-          professional skills. Open to opportunities from potential employers.
-          Let's connect!
-        </p>
         <div className="link-container">
           <a
             target="_blank"
             rel="nonreferrer"
             href="https://github.com/Njaaga-Gakure/"
           >
-            <BsGithub />
+            <BsGithub className={isDarkMode ? "svg-dark-mode" : "null"} />
           </a>
           <a>
-            <BsTwitter />
+            <BsTwitter className={isDarkMode ? "svg-dark-mode" : "null"} />
           </a>
           <a
             target="_blank"
             rel="nonreferrer"
             href="https://www.linkedin.com/in/brian-gakure-0a2320188/"
           >
-            <BsLinkedin />
+            <BsLinkedin className={isDarkMode ? "svg-dark-mode" : "null"} />
           </a>
         </div>
       </div>
@@ -47,31 +42,42 @@ const Wrapper = styled.section`
     color: var(--black-2);
     letter-spacing: var(--letter-spacing-2);
     span {
-      color: var(--primary-800);
+      color: var(--primary-700);
     }
   }
   .hero-role {
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    margin-top: 0.5rem;
     letter-spacing: var(--letter-spacing-2);
     text-transform: capitalize;
-    color: var(--primary-600);
-    border-bottom: 1px solid var(--primary-700);
-  }
-  .hero-desc {
-    letter-spacing: var(--letter-spacing-2);
-    color: var(--gray-600);
+    color: var(--primary-800);
+    border: 1px solid var(--primary-800);
+    border-radius: var(--border-radius-1);
   }
   .link-container {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     gap: 1rem;
     a {
       svg {
         font-size: 1.5rem;
         color: var(--primary-700);
+        color: var(--black-1);
         transition: var(--transition);
         &:hover {
           color: var(--primary-600);
           transform: scale(1.2);
+        }
+      }
+    }
+  }
+  .link-container {
+    a {
+      .svg-dark-mode {
+        color: var(--gray-50);
+        &:hover {
+          color: var(--gray-300);
         }
       }
     }
