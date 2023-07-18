@@ -53,7 +53,7 @@ const Wrapper = styled.section`
     text-transform: capitalize;
     color: var(--primary-800);
     border: 1px solid var(--primary-800);
-    border-radius: var(--border-radius-1);
+    /* border-radius: var(--border-radius-1); */
   }
   .link-container {
     margin-top: 2rem;
