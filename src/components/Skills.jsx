@@ -80,7 +80,7 @@ const Wrapper = styled.section`
   }
   .skills-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
     justify-content: center;
   }
   .skill {
