@@ -6,7 +6,8 @@ import {
   BiLogoTypescript,
   BiLogoMongodb,
 } from "react-icons/bi";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiStyledcomponents } from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
 import { nanoid } from "nanoid";
 
 const skillsUsingData = [
@@ -19,6 +20,12 @@ const skillsUsingData = [
     iconColor: "#F0DB4F",
   },
   { id: nanoid(), name: "React js", icon: <FaReact />, iconColor: "#61dbfb" },
+  {
+    id: nanoid(),
+    name: "nodejs",
+    icon: <FaNodeJs />,
+    iconColor: "#3C873A",
+  },
 ];
 const skillsLearningData = [
   {
@@ -29,15 +36,15 @@ const skillsLearningData = [
   },
   {
     id: nanoid(),
-    name: "TailWind",
-    icon: <BiLogoTailwindCss />,
-    iconColor: "#4dc0b5",
+    name: "GraphQL",
+    icon: <GrGraphQl />,
+    iconColor: "#e535ab",
   },
   {
     id: nanoid(),
-    name: "nodejs",
-    icon: <FaNodeJs />,
-    iconColor: "#3C873A",
+    name: "TailWind",
+    icon: <BiLogoTailwindCss />,
+    iconColor: "#4dc0b5",
   },
   {
     id: nanoid(),
